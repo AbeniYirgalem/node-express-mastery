@@ -1,0 +1,31 @@
+{
+  "name": "node-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "events.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbeniYirgalem/node-express-mastery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AbeniYirgalem/node-express-mastery/issues"
+  },
+  "homepage": "https://github.com/AbeniYirgalem/node-express-mastery#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0"
+  }
+}
