@@ -1,4 +1,4 @@
-# Node.js Crash Course – Developer Notes
+# Node.js Crash Course
 
 Welcome to my personal learning journey through Node.js! This repo includes concise notes, code examples, and concepts I've learned while building real-world applications using Node.js and Express.
 
@@ -64,6 +64,17 @@ Welcome to my personal learning journey through Node.js! This repo includes conc
 - [x] Connecting MongoDB to Express
 
 ## Folder Structure (for MVC Projects)
+
+Node-Crash-Course/
+├── controllers/
+│ └── Controller.js
+├── models/
+│ └── blogs.js
+├── Routes/
+│ └──routes.js
+├── views/
+│ └── ...
+├── app.js
 
 ## Tech Stack
 
