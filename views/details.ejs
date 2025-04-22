@@ -1,0 +1,39 @@
+<%- include('./partials/head.ejs') %>
+<body>
+<%- include('./partials/nav.ejs') %>
+
+<div class="details content">
+    <h2><%= blog.title %></h2>
+    <div class="content">
+        <p><%= blog.body %></p>
+    </div>
+    <a data-doc="<%= blog._id %>" class="delete">
+      <img src="/trash-svgrepo-com.svg" width="30" alt="delete icon">
+    </a>
+</div>
+
+
+<%- include('./partials/footer.ejs') %>
+
+<script>
+    
+    const deleteBtn = document.querySelector('a.delete');
+  
+    deleteBtn.addEventListener('click', () => {
+    if(confirm('Are you sure you want to delete this blog?')){
+    const blogId = deleteBtn.getAttribute('data-doc');
+
+    fetch(`/blogs/${blogId}`, {
+      method: 'DELETE',
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        window.location.href = data.redirect; //  Redirect to /blogs after deletion
+      })
+      .catch((err) => console.log(err));
+    }
+  })
+   
+  </script>
+</body>
+</html>
