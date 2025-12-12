@@ -65,16 +65,43 @@ Welcome to my personal learning journey through Node.js! This repo includes conc
 
 ## Folder Structure (for MVC Projects)
 
-Node-Crash-Course/
-├── controllers/
-│ └── Controller.js
-├── models/
-│ └── blogs.js
-├── Routes/
-│ └──routes.js
-├── views/
-│ └── ...
-├── app.js
+```
+project-root/
+├─ app.js
+├─ events.js
+├─ files.js
+├─ global.js
+├─ modules.js
+├─ package.json
+├─ peoples.js
+├─ readme.md
+├─ server.js
+├─ streams.js
+├─ test.js
+├─ controllers/
+│  └─ controllers.js
+├─ docs/
+│  ├─ blog3.txt
+│  ├─ blog4.txt
+│  ├─ blogs.txt
+│  └─ blogs2.txt
+├─ models/
+│  └─ blogs.js
+├─ public/
+│  └─ style.css
+├─ Router/
+│  └─ routes.js
+└─ views/
+	├─ 404.ejs
+	├─ about.ejs
+	├─ create.ejs
+	├─ details.ejs
+	├─ index.ejs
+	└─ partials/
+		├─ footer.ejs
+		├─ head.ejs
+		└─ nav.ejs
+```
 
 ## Tech Stack
 
